@@ -1,0 +1,24 @@
+{
+  "name": "restaurant",
+  "version": "0.0.1",
+  "description": "app/ static app folder     scss/ all the sass files go here      .gitignore files that are ignored by git",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pknelakuditi/Restaurant.git"
+  },
+  "keywords": [
+    "Angular",
+    "Node",
+    "Mean"
+  ],
+  "author": "pavan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pknelakuditi/Restaurant/issues"
+  },
+  "homepage": "https://github.com/pknelakuditi/Restaurant#readme"
+}
