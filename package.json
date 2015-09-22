@@ -23,5 +23,10 @@
   "homepage": "https://github.com/pknelakuditi/Restaurant#readme",
   "dependencies": {
     "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.0.0"
   }
 }
