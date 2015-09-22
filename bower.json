@@ -1,0 +1,21 @@
+{
+  "name": "Restaurant",
+  "version": "0.0.1",
+  "homepage": "https://github.com/pknelakuditi/Restaurant",
+  "authors": [
+    "pkn <pavannelakuditi@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.6",
+    "angular-ui-router": "~0.2.15"
+  }
+}
