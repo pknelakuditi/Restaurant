@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/pknelakuditi/Restaurant/issues"
   },
-  "homepage": "https://github.com/pknelakuditi/Restaurant#readme"
+  "homepage": "https://github.com/pknelakuditi/Restaurant#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }
