@@ -1,8 +1,27 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 
+html, body, ul, ol {
+  margin: 0;
+  padding: 0;
+}
 body {
   font: 100% $font-stack;
   color: $primary-color;
+  background-color: #efefef;
+}
+.container{
+ margin: .3em;
+ padding: .3em;
 }
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.box { @include border-radius(2px);
+  border: 2px solid #006666;
+}

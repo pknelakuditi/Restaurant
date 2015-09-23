@@ -5,7 +5,11 @@
     
 Angular and Node web application with simultaneous testing.
 
-npm install --save express
-npm install --save-dev grunt
-npm install --save-dev grunt-sass
-npm install grunt-contrib-watch --save-dev
+    npm install --save express
+    npm install --save-dev grunt
+    npm install --save-dev grunt-sass
+    npm install grunt-contrib-watch --save-dev
+
+    npm install --save-dev grunt-karma
+    npm install --save-dev karma-jasmine
+    npm install --save-dev karma-phantomjs-launcher
