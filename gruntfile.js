@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         cssmin: {
             css: {
                 files: {
-                    'app/css/style.min.css' : ['app/css/style.css']
+                    'app/css/style.min.css' : ['bower_components/bootstrap/dist/css/bootstrap.css','app/css/style.css']
                 }
             }
         },
@@ -59,11 +59,21 @@ module.exports = function(grunt) {
         uglify : {
             js: {
                 files: {
-                    'app/js/app.min.js' : [ 'bower_components/angular/angular.min.js',
+                    'app/dist/app.min.js' : [ 'bower_components/angular/angular.min.js',
                         'bower_components/angular-ui-router/release/angular-ui-router.min.js',
                         'app/app.js', 'app/controllers/*.js',"app/services/*.js"
                     ]
                 }
+            }
+        },
+        copy:{
+            main:{
+                files:[{
+                    expand:true,
+                    cwd:'bower_components/bootstrap',
+                    src:['fonts/**'],
+                    dest:'app/dist'
+                }]
             }
         }
 
@@ -78,5 +88,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-autoprefixer')
     grunt.loadNpmTasks('grunt-karma')
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['cssmin:css', 'autoprefixer', 'uglify:js']);
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.registerTask('default', ['cssmin', 'autoprefixer', 'uglify','copy']);
 };
